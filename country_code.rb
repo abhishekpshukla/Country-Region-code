@@ -3,12 +3,12 @@
 # NEED A carmen GEM - https://github.com/carmen-ruby/carmen 'gem install carmen'
 
 require 'carmen'
-include Carmen
 require 'json'
 require 'csv'
 
 
 class CountryCode
+	include Carmen
 	
 	attr_reader :countries
 	def initialize
